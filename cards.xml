@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Deck>
+	<Card>
+		<name>0001</name>
+		<strenght>5</strenght>
+	</Card>
+	<Card>
+		<name>0002</name>
+		<strenght>3</strenght>
+	</Card>
+	<Card>
+		<name>0003</name>
+		<strenght>3</strenght>
+	</Card>
+	<Card>
+		<name>0004</name>
+		<strenght>2</strenght>
+	</Card>
+	<Card>
+		<name>0005</name>
+		<strenght>1</strenght>
+	</Card>
+</Deck>
