@@ -28,44 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pic_aiCard = new System.Windows.Forms.PictureBox();
+            this.pic_playerCard = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_noOfCards = new System.Windows.Forms.Label();
+            this.lbl_palyerCardName = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbl_playerCardStrenght = new System.Windows.Forms.Label();
+            this.lbl_aiCardStrenght = new System.Windows.Forms.Label();
+            this.lbl_aiCardName = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lbl_aiWins = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lbl_wins = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.btn_playCard = new System.Windows.Forms.Button();
+            this.btn_Reset = new System.Windows.Forms.Button();
+            this.btn_win = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_aiCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_playerCard)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pic_aiCard
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(40, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(345, 532);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pic_aiCard.Location = new System.Drawing.Point(40, 25);
+            this.pic_aiCard.Name = "pic_aiCard";
+            this.pic_aiCard.Size = new System.Drawing.Size(345, 532);
+            this.pic_aiCard.TabIndex = 0;
+            this.pic_aiCard.TabStop = false;
             // 
-            // pictureBox2
+            // pic_playerCard
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(455, 25);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(345, 532);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.pic_playerCard.Location = new System.Drawing.Point(455, 25);
+            this.pic_playerCard.Name = "pic_playerCard";
+            this.pic_playerCard.Size = new System.Drawing.Size(345, 532);
+            this.pic_playerCard.TabIndex = 1;
+            this.pic_playerCard.TabStop = false;
             // 
             // label1
             // 
@@ -76,23 +76,23 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Cards in Deck";
             // 
-            // label2
+            // lbl_noOfCards
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(968, 79);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
+            this.lbl_noOfCards.AutoSize = true;
+            this.lbl_noOfCards.Location = new System.Drawing.Point(968, 79);
+            this.lbl_noOfCards.Name = "lbl_noOfCards";
+            this.lbl_noOfCards.Size = new System.Drawing.Size(35, 13);
+            this.lbl_noOfCards.TabIndex = 3;
+            this.lbl_noOfCards.Text = "label2";
             // 
-            // label3
+            // lbl_palyerCardName
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(960, 422);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "label3";
+            this.lbl_palyerCardName.AutoSize = true;
+            this.lbl_palyerCardName.Location = new System.Drawing.Point(960, 422);
+            this.lbl_palyerCardName.Name = "lbl_palyerCardName";
+            this.lbl_palyerCardName.Size = new System.Drawing.Size(35, 13);
+            this.lbl_palyerCardName.TabIndex = 4;
+            this.lbl_palyerCardName.Text = "label3";
             // 
             // label4
             // 
@@ -112,32 +112,32 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Card Strenght";
             // 
-            // label6
+            // lbl_playerCardStrenght
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(960, 453);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "label6";
+            this.lbl_playerCardStrenght.AutoSize = true;
+            this.lbl_playerCardStrenght.Location = new System.Drawing.Point(960, 453);
+            this.lbl_playerCardStrenght.Name = "lbl_playerCardStrenght";
+            this.lbl_playerCardStrenght.Size = new System.Drawing.Size(35, 13);
+            this.lbl_playerCardStrenght.TabIndex = 7;
+            this.lbl_playerCardStrenght.Text = "label6";
             // 
-            // label7
+            // lbl_aiCardStrenght
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(145, 617);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "label7";
+            this.lbl_aiCardStrenght.AutoSize = true;
+            this.lbl_aiCardStrenght.Location = new System.Drawing.Point(145, 617);
+            this.lbl_aiCardStrenght.Name = "lbl_aiCardStrenght";
+            this.lbl_aiCardStrenght.Size = new System.Drawing.Size(35, 13);
+            this.lbl_aiCardStrenght.TabIndex = 11;
+            this.lbl_aiCardStrenght.Text = "label7";
             // 
-            // label10
+            // lbl_aiCardName
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(145, 586);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 13);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "label10";
+            this.lbl_aiCardName.AutoSize = true;
+            this.lbl_aiCardName.Location = new System.Drawing.Point(145, 586);
+            this.lbl_aiCardName.Name = "lbl_aiCardName";
+            this.lbl_aiCardName.Size = new System.Drawing.Size(41, 13);
+            this.lbl_aiCardName.TabIndex = 8;
+            this.lbl_aiCardName.Text = "label10";
             // 
             // label11
             // 
@@ -148,14 +148,14 @@
             this.label11.TabIndex = 12;
             this.label11.Text = "Wins";
             // 
-            // label12
+            // lbl_aiWins
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(314, 586);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 13);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "label12";
+            this.lbl_aiWins.AutoSize = true;
+            this.lbl_aiWins.Location = new System.Drawing.Point(314, 586);
+            this.lbl_aiWins.Name = "lbl_aiWins";
+            this.lbl_aiWins.Size = new System.Drawing.Size(41, 13);
+            this.lbl_aiWins.TabIndex = 13;
+            this.lbl_aiWins.Text = "label12";
             // 
             // label8
             // 
@@ -175,14 +175,14 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "Card Played";
             // 
-            // label13
+            // lbl_wins
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(954, 367);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(41, 13);
-            this.label13.TabIndex = 16;
-            this.label13.Text = "label13";
+            this.lbl_wins.AutoSize = true;
+            this.lbl_wins.Location = new System.Drawing.Point(954, 367);
+            this.lbl_wins.Name = "lbl_wins";
+            this.lbl_wins.Size = new System.Drawing.Size(41, 13);
+            this.lbl_wins.TabIndex = 16;
+            this.lbl_wins.Text = "label13";
             // 
             // label14
             // 
@@ -193,61 +193,65 @@
             this.label14.TabIndex = 17;
             this.label14.Text = "Wins";
             // 
-            // button1
+            // btn_playCard
             // 
-            this.button1.Location = new System.Drawing.Point(850, 204);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Play Card";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_playCard.Location = new System.Drawing.Point(850, 204);
+            this.btn_playCard.Name = "btn_playCard";
+            this.btn_playCard.Size = new System.Drawing.Size(75, 23);
+            this.btn_playCard.TabIndex = 18;
+            this.btn_playCard.Text = "Play Card";
+            this.btn_playCard.UseVisualStyleBackColor = true;
+            this.btn_playCard.Click += new System.EventHandler(this.btn_playCard_Click);
             // 
-            // button2
+            // btn_Reset
             // 
-            this.button2.Location = new System.Drawing.Point(948, 204);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Reset";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_Reset.Location = new System.Drawing.Point(948, 204);
+            this.btn_Reset.Name = "btn_Reset";
+            this.btn_Reset.Size = new System.Drawing.Size(75, 23);
+            this.btn_Reset.TabIndex = 19;
+            this.btn_Reset.Text = "Reset";
+            this.btn_Reset.UseVisualStyleBackColor = true;
+            this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
             // 
-            // button3
+            // btn_win
             // 
-            this.button3.Location = new System.Drawing.Point(850, 258);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 20;
-            this.button3.Text = "Take Win";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_win.Location = new System.Drawing.Point(850, 258);
+            this.btn_win.Name = "btn_win";
+            this.btn_win.Size = new System.Drawing.Size(75, 23);
+            this.btn_win.TabIndex = 20;
+            this.btn_win.Text = "Take Win";
+            this.btn_win.UseVisualStyleBackColor = true;
+            this.btn_win.Click += new System.EventHandler(this.btn_win_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1071, 653);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_win);
+            this.Controls.Add(this.btn_Reset);
+            this.Controls.Add(this.btn_playCard);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.lbl_wins);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.lbl_aiWins);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lbl_aiCardStrenght);
+            this.Controls.Add(this.lbl_aiCardName);
+            this.Controls.Add(this.lbl_playerCardStrenght);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbl_palyerCardName);
+            this.Controls.Add(this.lbl_noOfCards);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pic_playerCard);
+            this.Controls.Add(this.pic_aiCard);
             this.Name = "MainForm";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Text = "Card Game TCG";
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pic_aiCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_playerCard)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,25 +259,25 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pic_aiCard;
+        private System.Windows.Forms.PictureBox pic_playerCard;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl_noOfCards;
+        private System.Windows.Forms.Label lbl_palyerCardName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbl_playerCardStrenght;
+        private System.Windows.Forms.Label lbl_aiCardStrenght;
+        private System.Windows.Forms.Label lbl_aiCardName;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lbl_aiWins;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lbl_wins;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_playCard;
+        private System.Windows.Forms.Button btn_Reset;
+        private System.Windows.Forms.Button btn_win;
     }
 }
 

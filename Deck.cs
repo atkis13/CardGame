@@ -8,7 +8,7 @@ using System.Xml.Serialization;
 namespace CardGame
 {
     [XmlRoot("Deck")]
-    class Deck
+    public class Deck
     {
         [XmlElement("Card")]
         public List<Card> cards { get; set; }
