@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace CardGame
 {
@@ -15,7 +16,9 @@ namespace CardGame
 
         PlayerClass player = new PlayerClass();
         AIClass aiPlayer = new AIClass();
-    
+        int lefttime;
+        Draw d = new Draw();
+
         public MainForm()
         {
             InitializeComponent();
@@ -31,6 +34,10 @@ namespace CardGame
             pic_playerCard.SizeMode = PictureBoxSizeMode.StretchImage;
             pic_playerCard.Visible = false;
             btn_win.Enabled = false;
+            lefttime = 9;
+            
+            
+
         }
 
         private void btn_playCard_Click(object sender, EventArgs e)
@@ -52,6 +59,7 @@ namespace CardGame
         //Both player play a card, the card is displayed to the user
         private void PlayGame()
         {
+            
             pic_aiCard.Visible = true;
             pic_playerCard.Visible = true;
 
@@ -85,9 +93,15 @@ namespace CardGame
                     if (player.getcardNumber() != 0)
                         btn_playCard.Enabled = true;
                 }
-                else
+                else if (player.cardStrenght == aiPlayer.cardStrenght)
                 {
-                    MessageBox.Show("DRAW");
+                    
+                    btn_playCard.Enabled = false;
+                    d.Show();
+                    timer1.Start();
+                    
+                    
+                    
                     if (player.getcardNumber() != 0)
                         btn_playCard.Enabled = true;
                 }
@@ -130,6 +144,23 @@ namespace CardGame
         private void btn_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            btn_playCard.Enabled = false;
+            if (lefttime > 0)
+            {
+                lefttime--;
+            }
+            else
+            {
+                timer1.Stop();
+                btn_playCard.Enabled = true;
+                d.Hide();
+                lefttime = 9;
+            }
+            
         }
     }  
         

@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="AICLass.cs" />
     <Compile Include="Deck.cs" />
+    <Compile Include="Draw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Draw.Designer.cs">
+      <DependentUpon>Draw.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Draw.resx">
+      <DependentUpon>Draw.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.pic_aiCard = new System.Windows.Forms.PictureBox();
             this.pic_playerCard = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -51,6 +53,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btn_exit = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pic_aiCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_playerCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_backgroung)).BeginInit();
@@ -58,7 +61,7 @@
             // 
             // pic_aiCard
             // 
-            this.pic_aiCard.Location = new System.Drawing.Point(377, 142);
+            this.pic_aiCard.Location = new System.Drawing.Point(380, 200);
             this.pic_aiCard.Name = "pic_aiCard";
             this.pic_aiCard.Size = new System.Drawing.Size(345, 532);
             this.pic_aiCard.TabIndex = 0;
@@ -66,7 +69,7 @@
             // 
             // pic_playerCard
             // 
-            this.pic_playerCard.Location = new System.Drawing.Point(859, 142);
+            this.pic_playerCard.Location = new System.Drawing.Point(862, 200);
             this.pic_playerCard.Name = "pic_playerCard";
             this.pic_playerCard.Size = new System.Drawing.Size(345, 532);
             this.pic_playerCard.TabIndex = 1;
@@ -209,7 +212,7 @@
             // 
             // btn_playCard
             // 
-            this.btn_playCard.Location = new System.Drawing.Point(1395, 288);
+            this.btn_playCard.Location = new System.Drawing.Point(1410, 288);
             this.btn_playCard.Name = "btn_playCard";
             this.btn_playCard.Size = new System.Drawing.Size(75, 23);
             this.btn_playCard.TabIndex = 18;
@@ -229,7 +232,7 @@
             // 
             // btn_win
             // 
-            this.btn_win.Location = new System.Drawing.Point(1395, 342);
+            this.btn_win.Location = new System.Drawing.Point(1410, 342);
             this.btn_win.Name = "btn_win";
             this.btn_win.Size = new System.Drawing.Size(75, 23);
             this.btn_win.TabIndex = 20;
@@ -239,9 +242,9 @@
             // 
             // pic_backgroung
             // 
-            this.pic_backgroung.Location = new System.Drawing.Point(228, 24);
+            this.pic_backgroung.Location = new System.Drawing.Point(229, 129);
             this.pic_backgroung.Name = "pic_backgroung";
-            this.pic_backgroung.Size = new System.Drawing.Size(1143, 727);
+            this.pic_backgroung.Size = new System.Drawing.Size(1143, 658);
             this.pic_backgroung.TabIndex = 21;
             this.pic_backgroung.TabStop = false;
             // 
@@ -288,12 +291,17 @@
             this.btn_exit.UseVisualStyleBackColor = true;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CardGame.Resource1.background;
-            this.ClientSize = new System.Drawing.Size(1602, 809);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1616, 867);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
@@ -317,7 +325,9 @@
             this.Controls.Add(this.pic_playerCard);
             this.Controls.Add(this.pic_aiCard);
             this.Controls.Add(this.pic_backgroung);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Card Game TCG";
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_aiCard)).EndInit();
@@ -353,6 +363,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btn_exit;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
