@@ -26,6 +26,8 @@ namespace CardGame
             LoadDeck();
         }
 
+
+        //Load the deck from the xml file
         public void LoadDeck()
         {
             
@@ -49,6 +51,10 @@ namespace CardGame
             }
         }
 
+        //Play  a card from the deck
+        //load card image from location based on card name
+        //card has name and strenght
+        //after play, remove the card from deck
         public void playCard()
         {
             try
@@ -75,19 +81,22 @@ namespace CardGame
             }
             
         }
-
+        //Returns the total number of card in deck
         public int getcardNumber()
         {
             totalCards = mydeck.cards.Count;
             return totalCards;
         }
 
+
+        //Reload the deck
         public void reset()
         {
             LoadDeck();
             wins = 0;
         }
 
+        //Return the number of wins
         public void getWins()
         {
             wins++;

@@ -24,9 +24,12 @@ namespace CardGame
         
         private void MainForm_Load(object sender, EventArgs e)
         {
+            pic_backgroung.Image = Resource1.table;
             lbl_noOfCards.Text = player.getcardNumber().ToString();
             pic_aiCard.SizeMode = PictureBoxSizeMode.StretchImage;
+            pic_aiCard.Visible = false;
             pic_playerCard.SizeMode = PictureBoxSizeMode.StretchImage;
+            pic_playerCard.Visible = false;
             btn_win.Enabled = false;
         }
 
@@ -44,9 +47,15 @@ namespace CardGame
         {
             TakeWin();
         }
-
+        
+        //Play the hame
+        //Both player play a card, the card is displayed to the user
         private void PlayGame()
         {
+            pic_aiCard.Visible = true;
+            pic_playerCard.Visible = true;
+
+
             if (player.getcardNumber() > 0)
             {
                 lbl_wins.Text = player.wins.ToString();
@@ -60,25 +69,30 @@ namespace CardGame
 
                 aiPlayer.playCard();
                 lbl_aiCardName.Text = aiPlayer.cardName;
-                lbl_playerCardStrenght.Text = aiPlayer.cardStrenght.ToString();
+                lbl_aiCardStrenght.Text = aiPlayer.cardStrenght.ToString();
                 pic_aiCard.ImageLocation = aiPlayer.cardLocation;
 
                 if (player.cardStrenght > aiPlayer.cardStrenght)
                 {
                     btn_win.Enabled = true;
-
+                    btn_playCard.Enabled = false;
+                   
                 }
                 else if (player.cardStrenght < aiPlayer.cardStrenght)
                 {
-                    aiPlayer.getWins();
+                    aiPlayer.getWins();                    
                     lbl_aiWins.Text = aiPlayer.wins.ToString();
+                    if (player.getcardNumber() != 0)
+                        btn_playCard.Enabled = true;
                 }
                 else
                 {
                     MessageBox.Show("DRAW");
+                    if (player.getcardNumber() != 0)
+                        btn_playCard.Enabled = true;
                 }
             }
-            else
+            else if(player.getcardNumber() == 0)
             {
                 btn_playCard.Enabled = false;
                 MessageBox.Show("out of cards");
@@ -87,6 +101,8 @@ namespace CardGame
 
         private void ResetGame()
         {
+            pic_aiCard.Visible = false;
+            pic_playerCard.Visible = false;
             player.reset();
             lbl_noOfCards.Text = player.getcardNumber().ToString();
             lbl_palyerCardName.Text = "";
@@ -106,9 +122,15 @@ namespace CardGame
             player.getWins();
             lbl_wins.Text = player.wins.ToString();
             btn_win.Enabled = false;
+
+            if(player.getcardNumber() != 0)
+            btn_playCard.Enabled = true;
         }
 
-        
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }  
         
 }
