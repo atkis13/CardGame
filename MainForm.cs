@@ -90,8 +90,8 @@ namespace CardGame
                 {
                     aiPlayer.getWins();                    
                     lbl_aiWins.Text = aiPlayer.wins.ToString();
-                    if (player.getcardNumber() != 0)
-                        btn_playCard.Enabled = true;
+                    if (player.getcardNumber() == 0)
+                        btn_playCard.Enabled = false;
                 }
                 else if (player.cardStrenght == aiPlayer.cardStrenght)
                 {
